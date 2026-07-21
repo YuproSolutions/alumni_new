@@ -1,0 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* If your header is fixed or sticky */
+section {
+  scroll-margin-top: 90px;
+}

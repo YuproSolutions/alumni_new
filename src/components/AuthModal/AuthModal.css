@@ -1,0 +1,326 @@
+/* ===========================
+   BACKDROP
+=========================== */
+
+.modal-backdrop{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.55);
+    backdrop-filter:blur(8px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+    animation:fadeIn .35s ease;
+}
+
+/* ===========================
+   MODAL
+=========================== */
+
+.auth-modal{
+
+    width:100%;
+    max-width:520px;
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    padding:45px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    box-shadow:0 30px 70px rgba(0,0,0,.25);
+
+    animation:popup .45s ease;
+}
+
+/* Top Gradient */
+
+.auth-modal::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:8px;
+
+    background:linear-gradient(
+    90deg,
+    #8a0fa5,
+    #6d18a8,
+    #3d5ed8);
+
+}
+
+/* ===========================
+   CLOSE BUTTON
+=========================== */
+
+.modal-close{
+
+    position:absolute;
+
+    top:18px;
+    right:18px;
+
+    width:40px;
+    height:40px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#f3f3f3;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.modal-close:hover{
+
+    background:#8a0fa5;
+
+    color:white;
+
+    transform:rotate(90deg);
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.modal-header{
+
+    margin-bottom:35px;
+}
+
+.eyebrow{
+
+    color:#8a0fa5;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+}
+
+.modal-header h2{
+
+    margin:15px 0;
+
+    font-size:34px;
+
+    color:#222;
+}
+
+.modal-header p{
+
+    color:#666;
+
+    line-height:1.7;
+
+    font-size:16px;
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+.auth-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+}
+
+.auth-form label{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    font-weight:600;
+
+    color:#333;
+}
+
+.auth-form input{
+
+    height:55px;
+
+    border:1px solid #ddd;
+
+    border-radius:14px;
+
+    padding:0 18px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    outline:none;
+}
+
+.auth-form input:focus{
+
+    border-color:#8a0fa5;
+
+    box-shadow:0 0 0 4px rgba(138,15,165,.15);
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.submit-btn{
+
+    margin-top:10px;
+
+    height:56px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:linear-gradient(
+    135deg,
+    #8a0fa5,
+    #6d18a8,
+    #4a49c8);
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+}
+
+.submit-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 35px rgba(138,15,165,.35);
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.modal-footer{
+
+    margin-top:30px;
+
+    text-align:center;
+}
+
+.modal-footer p{
+
+    color:#666;
+
+    margin-bottom:10px;
+}
+
+.mode-switch{
+
+    border:none;
+
+    background:none;
+
+    color:#8a0fa5;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.mode-switch:hover{
+
+    color:#4a49c8;
+
+    text-decoration:underline;
+}
+
+/* ===========================
+   ANIMATION
+=========================== */
+
+@keyframes popup{
+
+0%{
+
+opacity:0;
+
+transform:translateY(40px) scale(.9);
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0) scale(1);
+}
+
+}
+
+@keyframes fadeIn{
+
+0%{
+
+opacity:0;
+}
+
+100%{
+
+opacity:1;
+}
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.auth-modal{
+
+margin:20px;
+
+padding:30px;
+}
+
+.modal-header h2{
+
+font-size:28px;
+}
+
+.submit-btn{
+
+height:52px;
+}
+
+}

@@ -1,0 +1,242 @@
+/* ==========================
+   DIRECTORY SECTION
+========================== */
+
+.directory-section{
+    padding:100px 8%;
+    background:#faf8e8;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+.directory-header{
+    text-align:center;
+    max-width:750px;
+    margin:0 auto 60px;
+}
+
+.directory-tag{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:30px;
+    background:#f3ddff;
+    color:#7b1fa2;
+    font-weight:700;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.directory-header h2{
+    margin:20px 0;
+    font-size:3rem;
+    color:#1d1d1d;
+}
+
+.directory-header h2 span{
+    color:#7b1fa2;
+}
+
+.directory-header p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+/* ==========================
+   SEARCH
+========================== */
+
+.directory-search{
+    width:100%;
+    max-width:500px;
+    padding:15px 20px;
+    border:2px solid #ece3b0;
+    border-radius:15px;
+    outline:none;
+    font-size:16px;
+    transition:.3s;
+}
+
+.directory-search:focus{
+    border-color:#7b1fa2;
+    box-shadow:0 0 15px rgba(123,31,162,.2);
+}
+
+/* ==========================
+   GRID
+========================== */
+
+.directory-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:35px;
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.directory-card{
+    background:#fff;
+    border-radius:25px;
+    padding:30px;
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+    transition:.35s;
+    position:relative;
+    overflow:hidden;
+}
+
+.directory-card::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:5px;
+    background:linear-gradient(90deg,#8e24aa,#5e35b1);
+}
+
+.directory-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 30px 55px rgba(123,31,162,.18);
+}
+
+/* ==========================
+   PROFILE HEADER
+========================== */
+
+.profile-header{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin-bottom:25px;
+}
+
+.profile-circle{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#8e24aa,#5e35b1);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.profile-header h3{
+    margin:0;
+    font-size:24px;
+    color:#222;
+}
+
+.domain{
+    color:#7b1fa2;
+    font-weight:600;
+    font-size:15px;
+}
+
+/* ==========================
+   DETAILS
+========================== */
+
+.profile-details{
+    margin-top:20px;
+}
+
+.detail-row{
+    display:flex;
+    justify-content:space-between;
+    padding:12px 0;
+    border-bottom:1px solid #eee;
+}
+
+.detail-row strong{
+    color:#444;
+}
+
+.detail-row span{
+    color:#666;
+    text-align:right;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.card-buttons{
+    display:flex;
+    gap:15px;
+    margin-top:30px;
+}
+
+.view-btn,
+.connect-btn{
+    flex:1;
+    padding:13px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:700;
+    transition:.3s;
+}
+
+.view-btn{
+    background:#7b1fa2;
+    color:white;
+}
+
+.view-btn:hover{
+    background:#5e35b1;
+    transform:translateY(-3px);
+}
+
+.connect-btn{
+    background:white;
+    color:#7b1fa2;
+    border:2px solid #7b1fa2;
+}
+
+.connect-btn:hover{
+    background:#7b1fa2;
+    color:white;
+    transform:translateY(-3px);
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.directory-section{
+    padding:70px 20px;
+}
+
+.directory-header h2{
+    font-size:2.2rem;
+}
+
+.directory-grid{
+    grid-template-columns:1fr;
+}
+
+.profile-header{
+    flex-direction:column;
+    text-align:center;
+}
+
+.detail-row{
+    flex-direction:column;
+    gap:6px;
+}
+
+.card-buttons{
+    flex-direction:column;
+}
+
+}

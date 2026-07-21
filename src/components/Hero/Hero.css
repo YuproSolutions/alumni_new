@@ -1,0 +1,644 @@
+/* ==========================
+   HERO SECTION
+========================== */
+.hero{
+
+position:relative;
+overflow:hidden;
+
+min-height:100vh;
+
+padding:140px 8% 80px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:linear-gradient(
+135deg,
+#8a0fa5 0%,
+#8213a2 35%,
+#74179d 60%,
+#6426a6 80%,
+#4f49c7 92%,
+#3d5ed8 100%
+);
+
+}
+
+/* ==========================
+   BACKGROUND EFFECTS
+========================== */
+
+.hero-bg-circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,.08);
+  filter: blur(10px);
+  animation: float 8s ease-in-out infinite;
+}
+
+.hero-bg-one {
+  width: 260px;
+  height: 260px;
+  top: 80px;
+  right: 80px;
+}
+
+.hero-bg-two {
+  width: 350px;
+  height: 350px;
+  left: -120px;
+  bottom: -120px;
+  animation-delay: 2s;
+}
+
+/* ==========================
+   MAIN WRAPPER
+========================== */
+
+.hero-wrapper{
+
+width:100%;
+max-width:1300px;
+
+display:flex;
+flex-direction:column;
+
+align-items:center;
+
+text-align:center;
+
+z-index:2;
+}
+
+/* ==========================
+   CONTENT
+========================== */
+
+.hero-content{
+
+max-width:900px;
+
+animation:fadeUp .8s ease;
+}
+
+.hero-tag{
+
+display:inline-block;
+
+padding:10px 22px;
+
+border-radius:40px;
+
+border:1px solid rgba(255,255,255,.25);
+
+background:rgba(255,255,255,.08);
+
+color:white;
+
+font-size:13px;
+
+font-weight:600;
+
+letter-spacing:1px;
+
+margin-bottom:30px;
+}
+
+.hero-content h1{
+
+font-size:72px;
+
+font-weight:800;
+
+line-height:1.1;
+
+color:white;
+
+margin-bottom:28px;
+}
+
+.hero-description{
+
+font-size:21px;
+
+line-height:1.8;
+
+color:#f2f2f2;
+
+max-width:780px;
+
+margin:auto;
+
+margin-bottom:45px;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.hero-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+margin-bottom:70px;
+}
+
+.join-btn{
+
+padding:18px 42px;
+
+border:none;
+
+border-radius:14px;
+
+background:white;
+
+color:#7b159b;
+
+font-size:17px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.35s;
+}
+
+.join-btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+.explore-btn{
+
+padding:18px 42px;
+
+border:2px solid white;
+
+border-radius:14px;
+
+text-decoration:none;
+
+color:white;
+
+font-size:17px;
+
+font-weight:700;
+
+transition:.35s;
+}
+
+.explore-btn:hover{
+
+background:white;
+
+color:#7b159b;
+}
+
+
+/* ==========================
+   STATISTICS SECTION
+========================== */
+
+.stats-section{
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-bottom:60px;
+}
+
+.stat-card{
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    border-radius:24px;
+
+    padding:35px;
+
+    transition:.4s;
+
+    cursor:pointer;
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+    background:rgba(255,255,255,.18);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+}
+
+.stat-card h2{
+
+    font-size:52px;
+
+    color:white;
+
+    margin-bottom:10px;
+
+    font-weight:800;
+}
+
+.stat-card p{
+
+    color:#ececec;
+
+    font-size:18px;
+}
+
+
+/* ==========================
+   FEATURED CARD
+========================== */
+
+.featured-card{
+
+    width:100%;
+
+    max-width:900px;
+
+    background:white;
+
+    border-radius:26px;
+
+    padding:40px;
+
+    text-align:left;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.18);
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:.4s;
+}
+
+.featured-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:8px;
+
+    height:100%;
+
+    background:linear-gradient(
+    to bottom,
+    #8a0fa5,
+    #3d5ed8);
+}
+
+.featured-card:hover{
+
+    transform:translateY(-8px);
+}
+
+.featured-tag{
+
+    color:#8a0fa5;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    font-size:13px;
+}
+
+.featured-card h3{
+
+    margin:18px 0;
+
+    font-size:34px;
+
+    color:#222;
+}
+
+.featured-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    font-size:18px;
+}
+
+
+/* ==========================
+   HERO RIGHT - ANIMATED
+========================== */
+
+.hero-right{
+
+    position:absolute;
+
+    right:8%;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:300px;
+
+    height:300px;
+
+    z-index:1;
+}
+
+.animated-shape{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    border:3px solid rgba(255,255,255,.2);
+
+    border-radius:20px;
+
+    animation:pulse 4s ease-in-out infinite, bounce 6s ease-in-out infinite;
+
+    box-shadow:0 0 40px rgba(255,255,255,.15);
+}
+
+.animated-dot{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.3);
+
+    backdrop-filter:blur(10px);
+
+    border:2px solid rgba(255,255,255,.5);
+}
+
+.dot-1{
+
+    width:50px;
+
+    height:50px;
+
+    top:20px;
+
+    right:20px;
+
+    animation:float-dot 5s ease-in-out infinite;
+}
+
+.dot-2{
+
+    width:35px;
+
+    height:35px;
+
+    bottom:40px;
+
+    left:30px;
+
+    animation:float-dot 6s ease-in-out infinite 1s;
+}
+
+.dot-3{
+
+    width:60px;
+
+    height:60px;
+
+    bottom:20px;
+
+    right:40px;
+
+    animation:float-dot 5.5s ease-in-out infinite 0.5s;
+}
+
+
+/* ==========================
+   ANIMATIONS
+========================== */
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+
+transform:translateY(40px);
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+}
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0px);
+}
+
+50%{
+
+transform:translateY(-25px);
+}
+
+100%{
+
+transform:translateY(0px);
+}
+
+}
+
+@keyframes pulse{
+
+0%{
+
+transform:scale(1);
+
+opacity:1;
+}
+
+50%{
+
+transform:scale(1.1);
+
+opacity:.8;
+}
+
+100%{
+
+transform:scale(1);
+
+opacity:1;
+}
+
+}
+
+@keyframes bounce{
+
+0%, 100%{
+
+transform:translateY(0) rotate(0deg);
+}
+
+50%{
+
+transform:translateY(-30px) rotate(5deg);
+}
+
+}
+
+@keyframes float-dot{
+
+0%{
+
+transform:translate(0, 0);
+}
+
+33%{
+
+transform:translate(15px, -15px);
+}
+
+66%{
+
+transform:translate(-10px, 15px);
+}
+
+100%{
+
+transform:translate(0, 0);
+}
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+.hero{
+
+padding:130px 25px 80px;
+}
+
+.hero-content h1{
+
+font-size:48px;
+}
+
+.hero-description{
+
+font-size:18px;
+}
+
+.stats-section{
+
+grid-template-columns:1fr;
+
+gap:20px;
+}
+
+.featured-card{
+
+padding:30px;
+}
+
+.featured-card h3{
+
+font-size:28px;
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+align-items:center;
+}
+
+.join-btn,
+
+.explore-btn{
+
+width:100%;
+
+max-width:320px;
+
+text-align:center;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero-content h1{
+
+font-size:38px;
+
+line-height:1.2;
+}
+
+.hero-tag{
+
+font-size:11px;
+}
+
+.hero-description{
+
+font-size:16px;
+}
+
+.stat-card{
+
+padding:28px;
+}
+
+.stat-card h2{
+
+font-size:42px;
+}
+
+.featured-card{
+
+padding:24px;
+}
+
+.featured-card h3{
+
+font-size:24px;
+}
+
+}
