@@ -19,16 +19,12 @@ export default function Hero({ onAuthOpen }) {
           </span>
 
           <h1>
-            Connect with experienced alumni
-            <br />
-            shaping industries worldwide.
+            Welcome to the PSG College Alumni Network
+            
           </h1>
 
           <p className="hero-description">
-            A modern institute community for senior professionals
-            to discover trusted peers, exchange knowledge,
-            attend curated events, and support the next generation
-            of leaders.
+            Reconnect with fellow alumni, expand your professional network, participate in exclusive alumni events, mentor future graduates, and stay connected with the PSG community for life.
           </p>
 
           <div className="hero-buttons">

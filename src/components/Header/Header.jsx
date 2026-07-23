@@ -53,7 +53,7 @@ export default function Header({ onAuthOpen }) {
           </div>
 
           <div className="logo-text">
-            <h2>Institute Alumni</h2>
+            <h2>PSG Alumni</h2>
             <span>Network</span>
           </div>
         </button>
